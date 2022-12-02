@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Shahabis Portfolio</title>
+    <link rel="stylesheet" href="style1/style1.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> -->
+    <script src="menu.js" defer></script>
+    <script src="validation.js" defer></script>
+    <script src="slider.js" defer></script>
+</head>
+
+
+<body>
+    
+        <header class="page-header">
+            <nav class="menu">
+                <div class="max">
+                    <button class="menu-btn" id="menu-btn">
+                        <img src="image/burger-icon.png" alt="Menu">
+                    </button>
+                    <ul id="menu-items">
+                        <li class="selected">
+                            <a href="index.html" class="menu-item">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="aboutMe.html" class="menu-item">
+                                About Me
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="myProjects.html" class="menu-item">
+                                My Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    
+    <main>
+        <section class="hero-title">
+            <h1>  
+                Welcome to Zahra Shahabi's portfolio. <br>
+            </h1>
+        </section>
+
+        <!-- <section  class="home-heroImg">
+            <img src="image/to.jpg" alt="">
+        </section> -->
+
+        <!-- <section class="hero-secondtitle">
+            <h2>
+                  Are you looking for a creative web developer?
+            </h2>
+        </section> -->
+
+        <article class="about-me">
+            <section>
+                <img src="image/mypicture.jpg" alt="">
+            </section>
+            <aside>
+                <h2> Are you looking for a creative web developer?</h2>
+                <p>My name is Zahra Shahabi. I am studeing web development in
+                    Roskilde tecknical school...
+                </p>
+                <a href="aboutMe.html">Read More</a>
+            </aside>
+        </article>
+
+
+        <section class="slider">
+
+            <div class="slider-container">
+                <figure class="slide fade">
+                    <img src="/image/img3.png" alt="My first project">
+                    <!-- <h2 class="text">Project 1</h2> -->
+                </figure>
+                <figure class="slide fade">
+                    <img src="/image/img4.png" alt="My second project">
+                    <!-- <h2 class="text">Project 2</h2> -->
+                </figure>
+                <figure class="slide fade">
+                    <img src="/image/img5.png" alt="My third project">
+                    <!-- <h2 class="text">Project 3</h2> -->
+                </figure>
+                <!-- <figure class="slide fade">
+                    <img src="image/project4.png" alt="My fourth project">
+                    <h2 class="text">Project 4</h2>
+                </figure> -->
+        <!-- Previous og Next knapper -->
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            </div>
+
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+    </div>
+        </section>
+
+
+
+        
+        <section class="contact">
+            <h2>Here you can contact me</h2>
+            <form action="" class="message-form">
+                <input type="text" name="name" id="name-input" placeholder="Name" >
+                <p id="name-error"></p>
+
+                <input type="text" name="email" placeholder="Email" id="email-input">
+                <p id="email-error"></p>
+
+                <textarea name="message" id="message-input" cols="30" rows="10" placeholder="Comment"></textarea>
+                <p id="message-error"></p>
+
+                <input type="button" value="Send" id="submit-button">
+            </form>
+        </section>
+
+
+        <!-- <div class="logo">
+            <img src="image/LOGO.png" alt="" >
+        </div> -->
+
+        </main>
+
+        <footer>
+         
+            <a href="mailto:zahra.shahabi.dk@gmaile.com">
+                <img src="image/email.png" alt="">
+            </a>
+                
+            <a href="https://www.linkedin.com/in/m-k-b69900133/">
+                <img src="image/linkedin.png" alt="">
+            </a>
+
+            <a href="https://github.com/ZahraSH67">
+                <img src="image/GitHub-Mark-120px-plus.png" alt="">
+            </a>
+        </footer>
+</body>
+</html>

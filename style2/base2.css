@@ -1,0 +1,45 @@
+/* **************************************About Me *****************************************/
+
+.introduction-article{
+   
+    margin-top: 10%;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    background-color: var(--hero-color);
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+.head-image{
+    margin: 10%;
+}
+.head-image img{
+    width: 80%;
+    padding-left: 20%;
+}
+.head-text{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative ;
+    /* margin: 10vw 10vw 10vw 5vw; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.head-text h1{
+    margin-bottom: 2vw;
+    font-size: 5vw;
+}
+.head-text p:nth-child(2){
+    margin-bottom: 1vw;
+    font-size: 3.5vw;
+}
+.head-text p:nth-child(3), .head-text p:nth-child(4), .head-text p:nth-child(5), .head-text p:nth-child(6){
+    text-align: justify;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}

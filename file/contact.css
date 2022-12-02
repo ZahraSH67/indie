@@ -1,0 +1,50 @@
+.contact{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-footer-color);
+}
+.contact h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 3vw;
+    font-family: var(--h1-font);
+}
+.contact input:nth-child(2), .contact input:nth-child(4){
+    width: 50vw ;
+    padding: 0.5vw 0 0.5vw  1vw;
+    border-radius: 10px;
+}
+.contact textarea{
+    width: 50vw ;
+    padding: 1vw 0 1vw  1vw;
+    margin-bottom: 2.5vh;
+    border-radius: 10px;
+}
+.contact button{
+    padding: 1vh 3vw;
+    border-radius: 10px;
+    margin-bottom: 2.5vh;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+}
+.contact button:hover{
+    /* background-color: white; */
+    padding: 3vh 3vw;
+    font-size: larger;
+}
+.contact input:nth-child(2){
+    margin-bottom: 2.5vh;
+}
+.contact input:nth-child(4){
+    margin-bottom: 2.5vh;
+}
+
+
+#name-error, #email-error, #message-error{
+    font-family: var(--base-font);
+    font-size: 1vw;
+    color: red;
+}

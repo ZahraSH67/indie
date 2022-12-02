@@ -1,0 +1,56 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-footer-color);
+}
+.contact h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 3vw;
+    font-family: var(--h1-font);
+}
+
+#name-input, #email-input, #message-input{
+    font-family: var(--h1-font);
+    font-size: 1.5vw;
+    width: 50vw ;
+    padding: 0.5vw 0 0.5vw  1vw;
+}
+#message-input{
+    margin-bottom: 2.5vh;
+}
+#submit-button{
+    padding: 2vh 4vw;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+   margin-left: 40%;
+   font-size: 1.5vw;
+   font-family: var(--h1-font);
+}
+#submit-button:hover{
+    padding: 3vh 3vw;
+    font-size: larger;
+}
+
+#name-error, #email-error, #message-error{
+    font-family: var(--base-font);
+    font-size: 1vw;
+    color: red;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-family: var(--h1-font);
+}
+
+#name-input[type="text"]::-webkit-input-placeholder, #email-input[type="text"]::-webkit-input-placeholder{
+    color: var(--reputation-color);
+    opacity: 0.4;
+}
+.message-form textarea::-webkit-input-placeholder{
+    color: var(--reputation-color);
+    opacity: 0.4;
+
+} 
