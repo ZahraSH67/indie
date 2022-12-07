@@ -27,7 +27,21 @@ img{
     padding-top: 10%;
     font-size: 4vw;
     font-family: var(--h3-font);
+    animation: hero 5s linear 2s 1;
 }
+@keyframes hero {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .about-me{
     margin-top: 10%;
@@ -57,30 +71,45 @@ img{
 }
 .about-me aside p{
     padding: 5% 5% 0 10%;
-    /* line-height: 5vh; */
     margin-bottom: 10%;
     font-size:1.5vw;
-    /* font-weight: 700;
-    font-family: var(--h3-font); */
 }
 .about-me aside a{
     padding: 2% 2%;
     margin-left:10%;
-    /* margin-bottom: 50%; */
-    /* margin-bottom: 50vw;  */
-    /* padding-left: 10vw; */
     text-decoration: none;
-    /* border: 1px solid black; */
     border-radius: 20px;
     background-color: var(--button-color) ;
     font-size: 1.2vw;
 }
+.about-me aside a span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 .about-me aside a:hover{
-    color: black;
     font-size: 2vw;
-    text-transform: uppercase;
 }
 
+.about-me aside a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.about-me aside a:hover span {
+    padding-right: 25px;
+    color: black;
+  }
+  
+.about-me aside a:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 
 /* **************************************About Me *****************************************/
@@ -89,15 +118,9 @@ img{
     background-color: var(--button-color);
     margin: 30vh 2vw 30vh 2vw;
     border-radius: 10px;
-    /* background-image: url('image/man.jpg'); */
 }
 .head-image{
-    /* width: 90%; */
     margin: 10%;
-    /* padding: 10vw; */
-    /* border: 10px solid black; */
-    /* border-radius: 10px; */
-    /* background-color: black; */
     width: 100%;
 }
 .head-text{

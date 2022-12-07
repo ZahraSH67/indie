@@ -1,107 +1,128 @@
 .page-header{
-    background-color: var(--header-footer-color); 
-    color: black;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-radius: 10px;
-    padding: 2% 0;
-    box-shadow: 2px 2px 2px 2px lightgrey;
+  background-color: var(--header-footer-color); 
+  color: black;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+  padding: 2% 0;
+  box-shadow: 2px 2px 2px 2px lightgrey;
 }
 .menu{
-    padding-right: 80vw;
-    font-size: 1.5vw;
+  padding-right: 80vw;
+  font-size: 1.5vw;
 }
 .menu ul {
-    display: none;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
+  display: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
 }
 .menu .visible{
-    display: block;
+  display: block;
 
 }
 .menu-item {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    padding-top: 8px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 8px;
 }
 .menu-btn {
-    background: none;
-    border: none;
-    padding: 6px 0 4px;
-    display: inline-flex;
- 
+  background: none;
+  border: none;
+  padding: 6px 0 4px;
+  display: inline-flex;
+
 }
 
 
 .max{
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-  
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
 }
 .menu .max {
-    padding: 0 0 0 10px;
+  padding: 0 0 0 10px;
 }
 
 .text{
-    color: black;
+  color: black;
 }
 .menu .max #menu-items  a:hover{
-    /* background-color: black;*/
-    color: blue;
-    font-size: larger;
-    font-style: 900;
-    /* border-radius: 10px; */
+  /* background-color: black;*/
+  color: blue;
+  font-size: larger;
+  font-style: 900;
+  /* border-radius: 10px; */
 }
 
 
 @media screen  and (min-width:800px){ 
-    /*DESKTOP STYLING*/
-    .menu{
-       color: black;
-        padding-left: 15vw;
-        padding-right: 10vw;
-    }
-    .menu ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0;
+  /*DESKTOP STYLING*/
+  .menu{
+     color: black;
+      padding-left: 15vw;
+      padding-right: 10vw;
+  }
+  .menu ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
 
-    }
-    .menu-visible {
-        display: flex;
-    }
-    .menu-btn{
-        display: none;
-    }
-    .menu .max{
-        padding: 0;
-    }
-    .menu li{
-        padding: 15px;
-    }
-    .menu li:first-child{
-        display: block;
+  }
+  .menu-visible {
+      display: flex;
+  }
+  .menu-btn{
+      display: none;
+  }
+  .menu .max{
+      padding: 0;
+  }
+  .menu li{
+      padding: 15px;
+  }
+  .menu li:first-child{
+      display: block;
 
-    }
-  
-    .menu-item{
-        padding: 5px;
+  }
 
+  .menu-item{
+      padding: 5px;
+
+  }
+  .menu .max #menu-items a:hover{
+      background-color: black;
+      color: white;
+      font-size: larger;
+      border-radius: 10px;
+  }
+  .menu .max #menu-items a{
+      animation: header 10s linear 1;
+      transition: all;
+  }
+  @keyframes header {
+    0%{
+      transform: scale(0);
     }
-    .menu .max #menu-items  a:hover{
-        background-color: black;
-        color: white;
-        font-size: larger;
-        border-radius: 10px;
+    /* 25%{
+      transform: scale(1);
+    } */
+    50%{
+      transform: scale(1.5);
     }
+    /* 75%{
+      transform: scale(1);
+    } */
+    100%{
+      transform: scale(0);
+    }
+  }
 }
 
 

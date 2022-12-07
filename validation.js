@@ -15,7 +15,7 @@ const submitBtn = document.querySelector("#submit-button")
 //     setSucces()
 // })
 
-
+let border1 = "1px solid black"
 submitBtn?.addEventListener("click", function(event){
     event.preventDefault()
     if(nameInput.value === ""){

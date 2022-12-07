@@ -5,6 +5,13 @@
     align-items: center;
     background-color: var(--header-footer-color);
 }
+.message-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact h2{
     padding-top: 10vh;
     padding-bottom: 5vh;
@@ -20,28 +27,63 @@
 }
 #message-input{
     margin-bottom: 2.5vh;
-}
+} 
+
+
+/*****************************************************BUTTON*************************************************/
 #submit-button{
     padding: 2vh 4vw;
     border-radius: 10px;
     margin-bottom: 10%;
     background-color: var(--button-color);
+    color: black;
     border: 1px solid var(--button-color);
-   margin-left: 40%;
-   font-size: 1.5vw;
+   font-size: 3vw;
    font-family: var(--h1-font);
-}
-#submit-button:hover{
-    padding: 3vh 3vw;
-    font-size: larger;
-}
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  .message-form input:nth-child(7) {
+      width: 15vw;
+      height: 13vh;
+      cursor: pointer;
+      background: var(--button-color);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 10px 25px #57aba7, 0px -10px 25px var(--button-color), inset 0px -5px 10px #57aba7, inset 0px 5px 10px var(--button-color);
+      font-family: 'Damion', cursive;
+      color: white;
+      font-size: 2vw;
+      transition: 500ms;
+  }
+  
+  .message-form input:nth-child(7):hover {
+        border: 2px solid var(--button-color);
+        animation: hueRotation 2s linear infinite;
+  }
+  
+  @keyframes hueRotation {
+      to {filter: hue-rotate(360deg);}
+  }
+  
+  .message-form input:nth-child(7):focus {
+      outline: none;
+  }
+/**********************************************************************************************************/
 
 #name-error, #email-error, #message-error{
     font-family: var(--base-font);
     font-size: 1vw;
     color: red;
-    margin-left: 40%;
-    margin-bottom: 5%;
+    /* margin-left: 40%; */
+    margin-top: 2%;
+    margin-bottom: 2%;
     font-family: var(--h1-font);
 }
 

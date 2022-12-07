@@ -102,6 +102,28 @@
         font-size: larger;
         border-radius: 10px;
     }
+
+    .menu .max #menu-items a{
+        animation: header 10s linear 1;
+        transition: all;
+    }
+    @keyframes header {
+      0%{
+        transform: scale(0);
+      }
+      /* 25%{
+        transform: scale(1);
+      } */
+      50%{
+        transform: scale(1.5);
+      }
+      /* 75%{
+        transform: scale(1);
+      } */
+      100%{
+        transform: scale(0);
+      }
+    }
 }
 
 

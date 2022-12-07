@@ -30,9 +30,12 @@ img{
     padding-right: 20%;
 }
 
-.head-text h1{
-    margin-bottom: 2vw;
-    font-size: 5vw;
+.waviy{
+    margin-top: 3vh;
+    /* margin-bottom: 2vh; */
+    font-size: 6vw;
+    letter-spacing: 0.5px;
+    position: relative;
 }
 .head-text p:nth-child(2){
     margin-bottom: 1vw;
@@ -43,3 +46,26 @@ img{
     margin-top: 1vw;
     font-size: 1.5vw;
 }
+.waviy span{
+    font-size:15px;
+    /* text-transform: lowercase; */
+  }
+  @media screen and (min-width:800px){
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 34px;
+        font-weight: 900;
+        color: black;
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+      }
+      @keyframes flip {
+        0%,80% {
+          transform: rotateY(360deg) 
+        }
+      }
+  }
+ 
+ 
