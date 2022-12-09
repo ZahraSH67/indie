@@ -1,39 +1,6 @@
-/* .personal-skills{
-    background-color: var(--hero-color);
-    margin: 10vw 2vw 10vw 2vw;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15vh;
-}
-.personal-skills h1{
-    margin: 5vw 0;
-    font-size: 2vw;
-}
-
-.container {
-    width: 50%;
-    background-color: #ddd;
-  }
-  
-  .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-  }
-  
-  .html {width: 90%; background-color: #04AA6D;}
-  .css {width: 80%; background-color: #2196F3;}
-  .js {width: 65%; background-color: #f44336;}
-  .php {width: 60%; background-color: #808080;} */
 
 
-
-
-  /*******************************************************NEW*******************************************/
+  /*******************************************************SKILLS BAR*******************************************/
   .personal-skills{
     margin-left: 2%;
     margin-right: 2%;
@@ -60,21 +27,47 @@ h2{
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.bar{
+.bar1{
   position: relative;
-
-  border: 2px solid #d4af37;
-
+  border: 2px solid red;
   border-radius: 20px;
 
 }
-.bar div{
+.bar2{
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid blue;
+
+}
+.bar3{
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid  #d4af37;
+
+}
+.bar4{
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid green;
+}
+.bar1 div, .bar2 div, .bar3 div, .bar4 div{
   position: relative;
   width: 0;
-  height: 9px;
+  height: 15px;
   border-radius: 10px;
+
+}
+.bar1 div{
+  background-color: red;
+}
+.bar2 div{
+  background-color: blue;
+}
+.bar3 div{
   background-color: #d4af37;
- 
+}
+.bar4 div{
+  background-color: green;
 }
 
 .skills:not(:last-child){
@@ -82,7 +75,7 @@ h2{
 }
 
 #html-bar{
-  animation: html-fill 2s forwards;
+  animation: html-fill 4s forwards;
 }
 @keyframes html-fill{
   100%{
@@ -91,7 +84,7 @@ h2{
 }
 
 #css-bar{
-  animation: css-fill 2s forwards;
+  animation: css-fill 4s forwards;
 }
 
 @keyframes css-fill{
@@ -101,7 +94,7 @@ h2{
 }
 
 #js-bar{
-  animation: js-fill 2s forwards;
+  animation: js-fill 4s forwards;
 }
 @keyframes js-fill {
   100%{
@@ -110,7 +103,7 @@ h2{
 }
 
 #PHP-bar{
-  animation: PHP-fill 2s forwards;
+  animation: PHP-fill 4s forwards;
 }
 @keyframes PHP-fill{
   100%{

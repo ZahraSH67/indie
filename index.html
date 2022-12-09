@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahra Shahabis Portfolio</title>
     <link rel="stylesheet" href="style1/style1.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> -->
     <script src="menu.js" defer></script>
     <script src="validation.js" defer></script>
     <script src="slider.js" defer></script>
@@ -54,15 +51,7 @@
             </h1>
         </section>
 
-        <!-- <section  class="home-heroImg">
-            <img src="image/to.jpg" alt="">
-        </section> -->
 
-        <!-- <section class="hero-secondtitle">
-            <h2>
-                  Are you looking for a creative web developer?
-            </h2>
-        </section> -->
 
         <article class="about-me">
             <section>
@@ -107,21 +96,37 @@
 
 
         
-        <section class="contact">
-            <h2>Here you can contact me</h2>
-            <form action="" class="message-form">
-                <input type="text" name="name" id="name-input" placeholder="Name" >
-                <p id="name-error"></p>
 
-                <input type="text" name="email" placeholder="Email" id="email-input">
-                <p id="email-error"></p>
+        <div class="contact-me">
 
-                <textarea name="message" id="message-input" cols="30" rows="10" placeholder="Comment"></textarea>
-                <p id="message-error"></p>
+            <div class="container">
+                <div class="contact-me-container">
+                    <h2>
+                        Here you can contact me!
+                    </h2>
+                    
+                    <div class="form">
+                        <input type="text" name="your name" placeholder="Name" id="name-input">
+                        <p id="name-error"></p>
 
-                <input type="button" value="Send" id="submit-button">
-            </form>
-        </section>
+                        <input type="email" name="esmail" placeholder="Email" id="email-input">
+                        <p id="email-error"></p>
+
+                        <textarea class="text-area" placeholder="Message"  id="message-input"></textarea>
+                        <p id="message-error"></p>
+
+                        <div  class="btn-container">
+                            <input type="button" value="Send" id="submit-button">
+                        </div>
+                    </div>
+
+                    <div class="img-contact-me">
+                        <img src="image/contact-us.png" alt="contact-me">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
 
         </main>

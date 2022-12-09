@@ -101,10 +101,12 @@
         color: white;
         font-size: larger;
         border-radius: 10px;
+        transform: scale(1.5);
+        transition: color font-size border-radius transform 2s;
     }
 
     .menu .max #menu-items a{
-        animation: header 10s linear 1;
+        animation: header 10s linear infinite;
         transition: all;
     }
     @keyframes header {

@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 main{
   display: flex;
   justify-content: center;
@@ -9,13 +13,18 @@ main{
   position: relative;
   min-height: 100vh;
   background-color: #ddd;
+  padding-bottom: 10%;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  border--radius: ; */
+  /* border-radius: ; */
 
 }
 .container h2{
-  font-size: 40px;
+  font-size: 50px;
   font-family:var(--h2-font) ;
   font-weight: normal;
-  padding: 15px;
+  padding: 10%;
   color: #333;
   text-align: center;
   text-transform: capitalize;

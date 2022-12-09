@@ -4,19 +4,6 @@
   box-sizing: border-box;
 }
 
-/* *:focus{
-  outline: none;
-} */
-
-/* body{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ff7a2d;
-  font-family: 'roboto', sans-serif;
-} */
 body{
   min-height: 100vh;
 }
@@ -34,7 +21,7 @@ main h1{
     font-family: var(--h1-font);
 }
 .lineUp {
-  animation: 2s anim-lineUp ease-out 1;
+  animation: 5s anim-lineUp ease-out 1;
 }
 @keyframes anim-lineUp {
   0% {
@@ -53,3 +40,50 @@ main h1{
     transform: translateY(0%);
   }
 }
+
+/**********************************************************************Examples of My Work***********************************/
+.container2{
+  margin-left: 10%;
+  margin-right:10% ;
+  margin-bottom: 10%;
+  margin-top: 0;
+  background-color: #ddd;
+  padding-bottom: 8%;
+}
+
+.portfolio-title{
+  text-align: center;
+  color: black;
+  font-family: var(--h1-font);
+  font-size: 2.5rem;
+  margin: 7rem 0rem;
+  padding-top: 10%;
+  padding-bottom: 1%;
+}
+
+.portfolio-img-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.img-container{
+  flex-basis: 21rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  filter: blur(3px) sepia(100);
+  transition: all linear 0.5s;
+  cursor: pointer;
+}
+.img-container:hover{
+  filter: blur(0px) sepia(0);
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+}
+

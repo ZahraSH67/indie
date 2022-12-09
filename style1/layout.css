@@ -20,5 +20,20 @@
 }
 .head-text{
     grid-column: 2/3;
-    grid-row: 1/ span 1 ;
+    grid-row: 1/ span 1;
+}
+
+.contact-me-container{
+    display: grid;
+    grid: auto/ repeat(2, 1fr);
+}
+.form{
+    grid-column: 1/2;
+    grid-row: 1/ span 2;
+    flex: 50%;
+}
+.img-contact-me{
+    grid-column: 2/3;
+    grid-row: 1/span 2;
+    flex:50%;
 }

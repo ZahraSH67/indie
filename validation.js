@@ -37,7 +37,7 @@ submitBtn?.addEventListener("click", function(event){
     if(messageInput.value === ""){
         messageError.innerText = "Please enter your message!"
     } else{
-        messageError.innerText = "Thank you for your message!"
+        messageError.innerText = "Thanks for your message!"
         messageError.style.color = "green"
     } 
 })

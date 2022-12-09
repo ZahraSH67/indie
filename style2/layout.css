@@ -11,3 +11,43 @@
     grid-column: 2/3;
     grid-row: 1/ span 1 ;
 }
+
+.box-skills-container{
+    display: grid;
+    grid:auto/ repeat(3, 1fr);
+}
+.box-skills-container .box-skill:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/ span 1;
+}
+.box-skills-container .box-skill:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/ span 1;
+}
+.box-skills-container .box-skill:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 1/ span 1;
+}
+
+@media screen and (max-width:600px){
+    .box-skills-container{
+        display: grid;
+        width:100%;
+        grid: repeat(3, 1fr)/ auto;
+    }
+    .box-skills-container .box-skill:nth-child(1){
+        width:90%;
+        grid-column: 1/ span 1;
+        grid-row: 1/ span 1;
+    }
+    .box-skills-container .box-skill:nth-child(2){
+        grid-column: 1/ span 1;
+        grid-row: 2/ span 1;
+        width: 90%;
+    }
+    .box-skills-container .box-skill:nth-child(3){
+        grid-column: 1/ span 1;
+        grid-row: 3/ span 1;
+        width: 90%;
+    }
+}

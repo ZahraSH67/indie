@@ -27,7 +27,7 @@ img{
     padding-top: 10%;
     font-size: 4vw;
     font-family: var(--h3-font);
-    animation: hero 5s linear 2s 1;
+    animation: hero 10s linear  1;
 }
 @keyframes hero {
     0% {

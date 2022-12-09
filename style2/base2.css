@@ -1,5 +1,9 @@
 /* **************************************About Me *****************************************/
-
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 .introduction-article{
    
     margin-top: 10%;
@@ -17,7 +21,7 @@ img{
     margin: 10%;
 }
 .head-image img{
-    width: 80%;
+    width: 90%;
     padding-left: 20%;
 }
 .head-text{
@@ -28,6 +32,7 @@ img{
     /* margin: 10vw 10vw 10vw 5vw; */
     padding-left: 20%;
     padding-right: 20%;
+    font-family: var(--h2-font);
 }
 
 .waviy{
@@ -45,10 +50,10 @@ img{
     text-align: justify;
     margin-top: 1vw;
     font-size: 1.5vw;
+    font-family: var(--h2-font);
 }
 .waviy span{
     font-size:15px;
-    /* text-transform: lowercase; */
   }
   @media screen and (min-width:800px){
     .waviy span {
@@ -68,4 +73,88 @@ img{
       }
   }
  
+/*****************************************My Professional skills***************************************/
+.my-skills-container{
+    margin-bottom: 20%;
+    background-color: var(--hero-color);
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+  .my-skills-container h1{
+    text-align: center;
+    color: black;
+    font-family: var(--h2-font);
+    font-size: 4vw;
+    padding: 10vh;
+}
+.img-box-container{
+    min-width: 30%;
+    max-height:5rem;
+    overflow: hidden;
+}
+.img-box-container img{
+    /* height: 100%; */
+    height: 100%;
+    object-fit: contain;
+    
+    
+}
+
+.box-skill{
+    background: #fcfbff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 7%) -4px 9px 25px -6px;
+    border: 1px solid black;
+    width: 30vw;
+    /* min  standard max */
+    height: clamp(fit-content, 30vw, 10em);
+    border-radius: 10px;
+   margin-right: 1vw;
+}
+.box-skill h2{
+    font-family: var(--h1-font);
+    font-size: 2vw;
+    /* font-size: 1.4rem; */
+    color: black;
+}
+
+
+
+
+.box-skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.text-skills-container p{
+    font-family: var(--h2-font);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    font-size: 1.5vw;
+    /* margin:  1.2rem 0;
+    line-height: 1.8rem;   */
+}
  
+@media screen and (max-width:600px){
+    .text-skills-container p{
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 5vw;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .box-skill h2{
+        font-size: 4vw;
+    }
+    .box-skill{
+        margin-bottom: 2%;
+    }
+}

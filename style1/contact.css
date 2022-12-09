@@ -1,4 +1,4 @@
-.contact{
+/* .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,11 +27,11 @@
 }
 #message-input{
     margin-bottom: 2.5vh;
-} 
+}  */
 
 
 /*****************************************************BUTTON*************************************************/
-#submit-button{
+/* #submit-button{
     padding: 2vh 4vw;
     border-radius: 10px;
     margin-bottom: 10%;
@@ -74,14 +74,13 @@
   
   .message-form input:nth-child(7):focus {
       outline: none;
-  }
+  } */
 /**********************************************************************************************************/
 
-#name-error, #email-error, #message-error{
+/* #name-error, #email-error, #message-error{
     font-family: var(--base-font);
     font-size: 1vw;
     color: red;
-    /* margin-left: 40%; */
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: var(--h1-font);
@@ -95,4 +94,131 @@
     color: var(--reputation-color);
     opacity: 0.4;
 
+}  */
+
+
+
+
+/* .img-contact-me{
+    width: 25rem;
+    overflow: auto;
+} */
+
+
+
+/**********************************************My setting****************************************************/
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img-contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-contact-me img{
+  max-width: 100%;
+  margin-right: 2%;
+
+}
+/**************************************************************************************************************/
+
+.contact-me{
+    margin-bottom: 10%;
+}
+.contact-me-container{
+    box-shadow: rgb(17 17 26 / 5%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    border-radius: 4vw;
+    margin: 5vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 45vw; */
+    padding: 4vw;
+    font-size: 1.5vw;
+    max-width: 100%;
+    }
+
+.contact-me-container h2{
+    font-size: 3vw;
+    font-family: var(--h2-font);
+    margin-left: 3vw;
+    /* margin-bottom: 5%; */
+    margin-top: 5%;
+    color: #4c49b9;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    /* margin-right: 1rem; */
+}
+.form input, .text-area{
+    background-color:#f4f6fc ;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    font-family: var(--h2-font);
+    margin: 1vw;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    width: 100%;
+}
+.form input{
+min-height: 10%;
+flex-basis: 3vw;
+}
+
+
+.text-area{
+    height: 20vw;
+    /* outline: none;
+    border: none;
+    resize: none; */
+    padding-top: 1vw;
+}
+input::placeholder, textarea::placeholder{
+    color: #827ffe;
+}
+    
+
+#submit-button{
+padding: 2vh 2vw;
+font-family: var(--h2-font);
+background-color: #827ffe;
+color: white;
+border-radius: 2vw;
+box-shadow: #817ffe -4px 9px 25px -6px;
+font-size: 1.5vw;
+}
+#submit-button:hover{
+    transform: scale(1.5);
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    #submit-button{
+        padding: 1vh 1vw;
+    }
+}
+#name-error, #email-error, #message-error{
+    font-family: var(--base-font);
+    font-size: 1vw;
+    color: red;
+    margin-top: 2%;
+    font-family: var(--h1-font);
 } 
+#name-error, #email-error{
+    margin-bottom: 2%;
+}
+#message-error{
+    margin-bottom: 5%;
+}
